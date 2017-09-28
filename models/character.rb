@@ -9,7 +9,6 @@ class Character < App
       gibbon_attack: 'Battle Cry',
       hide: 'slinks away'
     }
-    super
   end
 
   def hide
