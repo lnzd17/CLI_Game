@@ -1,11 +1,9 @@
-
 module App
   CHARS = %w[newt gibbon].freeze
   $line_break = '**************************'
-
-  attr_accessor :messages, :answers
-
   @@store = {}
+
+  attr_accessor :messages, :answers, :gems, :actions
 
   def initialize(*)
     @messages = { wave: "✋",
@@ -13,6 +11,12 @@ module App
                   character: "Would you like to be a #{CHARS[0]} or a #{CHARS[1]}? \n \n",
                   attack: "Do you want to attack? \n \n" }
     @answers = {}
+    @gems = 10
+    @actions = {
+      newt_attack: "Stealth Bite",
+      gibbon_attack: "Battle Cry",
+      hide: "slinks away"
+    }
   end
 
   def self.recall(key)
@@ -20,6 +24,7 @@ module App
   end
 
   class UserInput
+
     @@errors = { wrong_input: 'oops try again' }
 
     def self.clean(user_input)
