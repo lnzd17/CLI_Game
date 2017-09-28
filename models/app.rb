@@ -1,4 +1,3 @@
-
 module App
   CHARS = %w[newt gibbon].freeze
   $line_break = '**************************'

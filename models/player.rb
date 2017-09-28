@@ -1,4 +1,6 @@
-class Player < App
+class Player
+  include App
+  
   attr_accessor :name, :type
 
   def initialize(name, type)
