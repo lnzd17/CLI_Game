@@ -1,8 +1,3 @@
-require './helpers/output'
-include Output
-
-Output::delay(3,'^^^',0.5)
-
 require './prompts/back_story.rb'
 
 setup = Welcome.new

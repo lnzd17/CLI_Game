@@ -1,4 +1,4 @@
-class Inventory
-  include App
-  
-end
+# class Inventory
+#   include App
+#
+# end

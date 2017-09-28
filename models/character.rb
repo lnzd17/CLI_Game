@@ -15,6 +15,6 @@ class Character
 
   def hide
     @gems -= 5
-    format_action(@actions[:hide])
+    Output.format_action(@actions[:hide])
   end
 end

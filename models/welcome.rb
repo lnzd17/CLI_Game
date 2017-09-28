@@ -1,4 +1,3 @@
-require './helpers/user_input'
 class Welcome
   include App
 
@@ -8,12 +7,12 @@ class Welcome
 
   def user_data
     until @answers[:name]
-      type_output(@messages[:name])
+      Output.type_output(@messages[:name])
       @answers[:name] = UserInput.clean(gets.chomp)
     end
 
     until CHARS.include?(@answers[:character])
-      type_output(@messages[:character])
+      Output.type_output(@messages[:character])
       @answers[:character] = UserInput.validate_input(gets.chomp)
     end
   end

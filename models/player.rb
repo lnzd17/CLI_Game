@@ -1,4 +1,3 @@
-require './helpers/user_input'
 class Player
   include App
 
@@ -22,7 +21,7 @@ class Player
 
   def confirm_input(move)
     until @answers[move] == false || @answers[move] == true
-      type_output(@messages[move])
+      Output.type_output(@messages[move])
       @answers[move] = UserInput.ensure_boolean(gets.chomp)
     end
   end
