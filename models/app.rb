@@ -1,5 +1,5 @@
 
-module App
+class App
   CHARS = %w[newt gibbon].freeze
   $line_break = '**************************'
 

@@ -1,6 +1,4 @@
-class Welcome
-  include App
-
+class Welcome < App
   def greeting
     puts @messages[:wave]
   end
