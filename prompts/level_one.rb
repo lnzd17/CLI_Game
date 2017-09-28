@@ -1,0 +1,1 @@
+App.recall('player').move
