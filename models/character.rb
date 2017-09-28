@@ -6,7 +6,7 @@ class Character
   def initialize(gems = 10, actions = nil)
     @gems = gems
     @actions = {
-      newt_attack: 'Stealth Bite',
+      newt_attack: "Stealth Bite",
       gibbon_attack: 'Battle Cry',
       hide: 'slinks away'
     }
@@ -15,6 +15,6 @@ class Character
 
   def hide
     @gems -= 5
-    puts @actions[:hide]
+    format_action(@actions[:hide])
   end
 end

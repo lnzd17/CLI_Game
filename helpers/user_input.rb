@@ -1,4 +1,3 @@
-
 module UserInput
   include App
 

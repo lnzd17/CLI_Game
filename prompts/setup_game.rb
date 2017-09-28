@@ -1,10 +1,14 @@
-line_break = '**************************'
+require './helpers/output'
+include Output
+
+Output::delay(3,'^^^', 0.5)
+
 require './prompts/back_story.rb'
-puts line_break
+
 setup = Welcome.new
 setup.greeting
 setup.user_data
 setup.create_player
-setup.successful_setup
-puts line_break
+setup.profile
+
 require './prompts/level_one'

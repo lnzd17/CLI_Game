@@ -8,12 +8,12 @@ class Welcome
 
   def user_data
     until @answers[:name]
-      puts @messages[:name]
+      type_output(@messages[:name])
       @answers[:name] = UserInput.clean(gets.chomp)
     end
 
     until CHARS.include?(@answers[:character])
-      puts @messages[:character]
+      type_output(@messages[:character])
       @answers[:character] = UserInput.validate_input(gets.chomp)
     end
   end
@@ -23,9 +23,13 @@ class Welcome
     @@store[:gems] = @@store[:player].type.gems
   end
 
-  def successful_setup
-    puts "Name: #{@answers[:name]}"
-    puts "Species: #{@answers[:character]}"
-    puts "Gems: #{@@store[:gems]}"
+  def profile
+    puts " "
+    puts $line_break
+    puts "NAME: #{@answers[:name]}"
+    puts "SPECIES: #{@answers[:character]}"
+    puts "GEMS: #{@@store[:gems]}"
+    puts $line_break
+    puts " "
   end
 end

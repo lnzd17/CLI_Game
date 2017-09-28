@@ -2,8 +2,8 @@ class Gibbon < Character
   include App
 
   def attack
-    puts @actions[:gibbon_attack]
     @gems += 3
+    format_action(@actions[:gibbon_attack])
   end
 
 end

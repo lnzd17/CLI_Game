@@ -22,7 +22,7 @@ class Player
 
   def confirm_input(move)
     until @answers[move] == false || @answers[move] == true
-      puts @messages[move]
+      type_output(@messages[move])
       @answers[move] = UserInput.ensure_boolean(gets.chomp)
     end
   end
