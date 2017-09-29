@@ -1,3 +1,5 @@
+require 'colorize'
+
 module Output
   def delay_output(loop_num, output, delay_time)
     1.upto(loop_num) do
@@ -9,12 +11,12 @@ module Output
   def type_it(message)
     words = message.split(/(\W)/)
     words.each do |w|
-      print w
+      print w.colorize(:green).on_black
       sleep 0.1
     end
   end
 
   def format_action(action)
-    type_it(action.upcase + "\n")
+    print "* #{action} *\n".colorize(:yellow).on_black
   end
 end

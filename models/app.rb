@@ -9,7 +9,7 @@ module App
 
   ALTS = JSON.parse(file).freeze
   CHARS = %w[newt gibbon].freeze
-  LINE_BREAK = '**************************'.freeze
+  LINE_BREAK = '**************************'.colorize(:cyan).freeze
   @@store = { gems: 0 }
 
   def self.recall(key)
