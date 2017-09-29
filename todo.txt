@@ -1,1 +1,2 @@
 1) limit input length
+2) disclaimer about rules and emoji fonts
