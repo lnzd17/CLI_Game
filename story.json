@@ -2,7 +2,7 @@
   "Newt": {
     "messages": {
       "task_one": [
-        "Find Relic...We Offer Gems \n \n", [
+        "🌄 💎  Your leader has commanded you to seek out and return an ancient relic to its proper place. \n This relic was lost to your people thousands of years ago. \n Your leader implies you will be reimbursed for your efforts. \n Do you name your price? \n \n", [
           "accept",
           5
         ],
@@ -13,31 +13,31 @@
       ]
     },
     "actions": {
-      "accept": "oh ya accepted",
-      "decline": "oh no declined"
+      "accept": "👣  You ask for 4 gems, however your leader respects your tenacity and gives you 5 ",
+      "decline": "❌  You decline and but your leader throws 3 gems your way and dismisses you"
     }
   },
   "Gibbon": {
     "messages": {
       "task_one": [
-        "Find Relic...We Offer Gems \n \n", [
+        "🌄 💎  You have been honored with the task of finding a beautiful ancient relic. \n This will bring prosperity to your people and will ensure its future place in the world. \n Your leader has offered you gems for your sacrifice. \n Do you accept? \n \n", [
           "accept",
-          5
+          3
         ],
         [
           "decline",
-          3
+          5
         ]
       ]
     },
     "actions": {
-      "accept": "oh ya accepted",
-      "decline": "oh no declined"
+      "accept": "👣  You eagerly accept, but notice a look of annoyance on your leader's face as she hands over 3 gems",
+      "decline": "❌  You politely decline, as bringing honor to your people is enough payment. Your leader smiles and insists you take 5 gems"
     }
   },
   "Welcome": {
-    "greeting": "hello",
-    "name": "What is your character called? \n \n",
-    "character": "Will you journey as a Newt or Gibbon? \n \n"
+    "greeting": "You have entered the world of [placeholder]",
+    "name": "What will you call your character? \n \n",
+    "character": "Will you journey as a 🦎  Newt or 🐒  Gibbon? \n \n"
   }
 }

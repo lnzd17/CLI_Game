@@ -4,12 +4,12 @@ class Character
   def accept(gems, action)
     @@store[:gems] += gems
     format_action(action)
-    App.recall('player').profile
+    App.recall('player').gem_count
   end
 
   def decline(gems, action)
     @@store[:gems] += gems
     format_action(action)
-    App.recall('player').profile
+    App.recall('player').gem_count
   end
 end

@@ -15,4 +15,10 @@ class Player
     type_it("GEMS: #{@@store[:gems]} \n")
     puts LINE_BREAK
   end
+
+  def gem_count
+    puts LINE_BREAK
+    type_it("GEMS: #{@@store[:gems]} \n")
+    puts LINE_BREAK
+  end
 end
