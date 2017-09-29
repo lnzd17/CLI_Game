@@ -1,30 +1,13 @@
 module App
   CHARS = %w[newt gibbon].freeze
   $line_break = '**************************'
-  @@store = {}
-
-  attr_accessor :messages, :answers, :gems, :actions
-
-  def initialize(*)
-    @messages = { wave: "✋",
-                  name: "What is your name? \n \n",
-                  character: "Would you like to be a #{CHARS[0]} or a #{CHARS[1]}? \n \n",
-                  attack: "Do you want to attack? \n \n" }
-    @answers = {}
-    @gems = 10
-    @actions = {
-      newt_attack: "Stealth Bite",
-      gibbon_attack: "Battle Cry",
-      hide: "slinks away"
-    }
-  end
+  @@store = {gems: 0}
 
   def self.recall(key)
     @@store[key.to_sym]
   end
 
   class UserInput
-
     @@errors = { wrong_input: 'oops try again' }
 
     def self.clean(user_input)
@@ -36,21 +19,9 @@ module App
       end
     end
 
-    def self.validate_input(user_input)
-      if CHARS.include?(user_input)
-        CHARS[CHARS.find_index(user_input)]
-      else
-        puts @@errors[:wrong_input]
-      end
-    end
-
-    def self.ensure_boolean(user_input)
-      input = user_input.downcase
-      case input
-      when 'yes', 'y'
-        true
-      when 'no', 'n'
-        false
+    def self.validate_input(user_input, arr)
+      if arr.include?(user_input)
+        arr[arr.find_index(user_input)]
       else
         puts @@errors[:wrong_input]
       end
@@ -79,6 +50,4 @@ module App
       puts $line_break
     end
   end
-
-
 end

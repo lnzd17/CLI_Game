@@ -1,0 +1,38 @@
+{
+  "Newt": {
+    "messages": {
+      "request_from_order": [
+        "Find Relic...We Offer Gems \n \n", [
+          "accept",
+          5
+        ],
+        [
+          "decline",
+          3
+        ]
+      ]
+    },
+    "actions": {
+      "accept": "oh ya accepted",
+      "decline": "oh no declined"
+    }
+  },
+  "Gibbon": {
+    "messages": {
+      "request_from_order": [
+        "Find Relic...We Offer Gems \n \n", [
+          "accept",
+          5
+        ],
+        [
+          "decline",
+          3
+        ]
+      ]
+    },
+    "actions": {
+      "accept": "oh ya accepted",
+      "decline": "oh no declined"
+    }
+  }
+}

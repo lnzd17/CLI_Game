@@ -1,28 +1,21 @@
 class Player
   include App
-  
+
   attr_accessor :name, :type
 
   def initialize(name, type)
     @name = name
     @type = type == CHARS[0] ? Newt.new : Gibbon.new
-    super
   end
 
-  def move(move_type = 'attack')
-    move = move_type.to_sym
-    confirm_input(move)
-
-    @answers[move] == true ? @type.send(move) : @type.hide
-    @@store[:gems] = @type.gems
+  def profile
+    puts " "
+    puts $line_break
+    puts "NAME: #{@name}"
+    puts "SPECIES: #{@type.class}"
+    puts "GEMS: #{@@store[:gems]}"
+    puts $line_break
+    puts " "
   end
 
-  private
-
-  def confirm_input(move)
-    until @answers[move] == false || @answers[move] == true
-      Output.type_output(@messages[move])
-      @answers[move] = UserInput.ensure_boolean(gets.chomp)
-    end
-  end
 end
