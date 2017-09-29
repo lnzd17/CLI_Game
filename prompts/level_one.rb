@@ -1,10 +1,8 @@
-require 'json'
-require './helpers/data_parser'
+file = File.read('./data.json')
+data = JSON.parse(file)
 
 player = App.recall('player')
 type = player.type.class
-file = File.read('./data.json')
-data = JSON.parse(file)
 c_data = DataParser.new(data[type.to_s])
 
 

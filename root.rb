@@ -1,3 +1,9 @@
+# include json module
+require 'json'
+
+# include data parser
+require './helpers/data_parser'
+
 # include models
 require './models/app.rb'
 require './models/welcome.rb'

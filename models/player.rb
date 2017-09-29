@@ -9,13 +9,11 @@ class Player
   end
 
   def profile
-    puts " "
     puts $line_break
-    puts "NAME: #{@name}"
-    puts "SPECIES: #{@type.class}"
-    puts "GEMS: #{@@store[:gems]}"
+    type_output("NAME: #{@name} \n")
+    type_output("SPECIES: #{@type.class} \n")
+    type_output("GEMS: #{@@store[:gems]} \n")
     puts $line_break
-    puts " "
   end
 
 end

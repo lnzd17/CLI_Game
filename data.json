@@ -34,5 +34,10 @@
       "accept": "oh ya accepted",
       "decline": "oh no declined"
     }
+  },
+  "Welcome": {
+    "greeting": "hello",
+    "name": "What is your character called? \n \n",
+    "character": "Will you journey as a Newt or Gibbon? \n \n"
   }
 }
