@@ -3,7 +3,7 @@ class ChallengeOne
 
   attr_accessor :player, :messages, :actions, :answers
 
-  def initialize(player, messages, actions )
+  def initialize(player, messages, actions)
     @player = player
     @messages = messages
     @actions = actions
@@ -11,13 +11,28 @@ class ChallengeOne
   end
 
   def task(key)
-    until @answers[key] == @messages[key][1][0] || @answers[key] == @messages[key][2][0]
-      type_output(@messages[key][0])
-      @answers[key] = validate_input(gets.chomp, [ @messages[key][1][0], @messages[key][2][0] ])
+    message = @messages[key][0]
+    response_one = @messages[key][1][0]
+    response_two = @messages[key][2][0]
+    responses = [response_one, response_two]
+
+    until @answers[key] == response_one || @answers[key] == response_two
+      type_output(message)
+      @answers[key] = validate_input(gets.chomp, responses)
     end
 
-    gems = @messages[key][1].include?(@answers[key]) ? @messages[key][1][1] : @messages[key][2][1]
-    @player.type.send(@answers[key].to_sym, gems, @actions[@answers[key]] )
+    trigger_action(key)
   end
 
+  private
+
+  def trigger_action(key)
+    pair_one = @messages[key][1]
+    gems_one = @messages[key][1][1]
+    gems_two = @messages[key][2][1]
+    actions = @actions[@answers[key]]
+    gems = pair_one.include?(@answers[key]) ? gems_one : gems_two
+
+    @player.type.send(@answers[key].to_sym, gems, actions)
+  end
 end

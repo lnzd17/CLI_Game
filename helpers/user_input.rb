@@ -1,5 +1,5 @@
 module UserInput
-  ERRORS = { wrong_input: 'oops try again' }
+  ERRORS = { wrong_input: 'oops try again' }.freeze
 
   def ensure_input(user_input)
     input = user_input.downcase.strip

@@ -1,6 +1,6 @@
 module Output
   def delay(loop_num, output, delay_time)
-    1.upto(loop_num) do |n|
+    1.upto(loop_num) do
       puts output
       sleep delay_time
     end
@@ -15,6 +15,6 @@ module Output
   end
 
   def format_action(action)
-    self.type_output(action.upcase + "\n")
+    type_output(action.upcase + "\n")
   end
 end

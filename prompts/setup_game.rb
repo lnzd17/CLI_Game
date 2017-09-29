@@ -3,7 +3,6 @@ data = JSON.parse(file)
 
 require './prompts/back_story.rb'
 
-
 setup = Welcome.new(data['Welcome'])
 setup.greeting
 setup.user_data
