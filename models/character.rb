@@ -1,14 +1,8 @@
 class Character
   include App
 
-  def accept(gems, action)
-    @@store[:gems] += gems
-    format_action(action)
-    App.recall('player').gem_count
-  end
-
-  def decline(gems, action)
-    @@store[:gems] += gems
+  def move(response, count, action)
+    @@store[:gems] += count
     format_action(action)
     App.recall('player').gem_count
   end

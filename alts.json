@@ -11,6 +11,16 @@
       "no",
       "n",
       "d"
+    ],
+    "weapon": [
+      "weapon",
+      "wep",
+      "w"
+    ],
+    "encyclopedia": [
+      "encyclopedia",
+      "pedia",
+      "e"
     ]
   },
   "chars": {

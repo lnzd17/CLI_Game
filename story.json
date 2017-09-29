@@ -10,11 +10,23 @@
           "decline",
           3
         ]
+      ],
+      "task_two": [
+        "👝 Pack for trip...weapon or encyclopedia  \n", [
+          "weapon",
+          0
+        ],
+        [
+          "encyclopedia",
+          3
+        ]
       ]
     },
     "actions": {
       "accept": "👣  You ask for 4 gems, however your leader respects your tenacity and gives you 5 ",
-      "decline": "❌  You decline and but your leader throws 3 gems your way and dismisses you"
+      "decline": "❌  You decline and but your leader throws 3 gems your way and dismisses you",
+      "weapon": "⚔️ ",
+      "encyclopedia": "📖 "
     }
   },
   "Gibbon": {
@@ -28,11 +40,23 @@
           "decline",
           5
         ]
+      ],
+      "task_two": [
+        "👝 Pack for trip...weapon or encyclopedia \n", [
+          "weapon",
+          0
+        ],
+        [
+          "encyclopedia",
+          3
+        ]
       ]
     },
     "actions": {
       "accept": "👣  You eagerly accept, but notice a look of annoyance on your leader's face as she hands over 3 gems",
-      "decline": "❌  You politely decline, as bringing honor to your people is enough payment. Your leader smiles and insists you take 5 gems"
+      "decline": "❌  You politely decline, as bringing honor to your people is enough payment. Your leader smiles and insists you take 5 gems",
+      "weapon": "⚔️ ",
+      "encyclopedia": "📖 "
     }
   },
   "Welcome": {

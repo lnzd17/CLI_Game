@@ -28,11 +28,11 @@ class ChallengeOne
 
   def trigger_action(key)
     pair_one = @messages[key][1]
-    gems_one = @messages[key][1][1]
-    gems_two = @messages[key][2][1]
-    actions = @actions[@answers[key]]
-    gems = pair_one.include?(@answers[key]) ? gems_one : gems_two
+    count_one = @messages[key][1][1]
+    count_two = @messages[key][2][1]
+    action = @actions[@answers[key]]
+    count = pair_one.include?(@answers[key]) ? count_one : count_two
 
-    @player.type.send(@answers[key].to_sym, gems, actions)
+    @player.type.move(@answers[key], count, action)
   end
 end
