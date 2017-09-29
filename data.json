@@ -1,7 +1,7 @@
 {
   "Newt": {
     "messages": {
-      "request_from_order": [
+      "task_one": [
         "Find Relic...We Offer Gems \n \n", [
           "accept",
           5
@@ -19,7 +19,7 @@
   },
   "Gibbon": {
     "messages": {
-      "request_from_order": [
+      "task_one": [
         "Find Relic...We Offer Gems \n \n", [
           "accept",
           5
