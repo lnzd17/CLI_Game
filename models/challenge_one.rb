@@ -17,8 +17,8 @@ class ChallengeOne
     responses = [response_one, response_two]
 
     until @answers[key] == response_one || @answers[key] == response_two
-      type_output(message)
-      @answers[key] = validate_input(gets.chomp, responses)
+      type_it(message)
+      @answers[key] = validate_input(gets.chomp, responses, ALTS['responses'])
     end
 
     trigger_action(key)

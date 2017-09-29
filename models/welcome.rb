@@ -13,13 +13,13 @@ class Welcome
 
   def user_data
     until @answers['name']
-      type_output(@messages['name'])
+      type_it(@messages['name'])
       @answers['name'] = ensure_input(gets.chomp)
     end
 
     until CHARS.include?(@answers['character'])
-      type_output(@messages['character'])
-      @answers['character'] = validate_input(gets.chomp, CHARS)
+      type_it(@messages['character'])
+      @answers['character'] = validate_input(gets.chomp, CHARS, ALTS['chars'])
     end
   end
 

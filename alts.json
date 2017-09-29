@@ -1,0 +1,28 @@
+{
+  "responses": {
+    "accept": [
+      "accept",
+      "yes",
+      "y",
+      "a"
+    ],
+    "decline": [
+      "decline",
+      "no",
+      "n",
+      "d"
+    ]
+  },
+  "chars": {
+    "gibbon": [
+      "gibbon",
+      "gib",
+      "g"
+    ],
+    "newt": [
+      "newt",
+      "new",
+      "n"
+    ]
+  }
+}

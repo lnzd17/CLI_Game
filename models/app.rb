@@ -5,6 +5,9 @@ module App
   include Output
   include UserInput
 
+  file = File.read('./alts.json')
+
+  ALTS = JSON.parse(file).freeze
   CHARS = %w[newt gibbon].freeze
   LINE_BREAK = '**************************'.freeze
   @@store = { gems: 0 }

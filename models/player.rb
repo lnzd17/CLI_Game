@@ -10,9 +10,9 @@ class Player
 
   def profile
     puts LINE_BREAK
-    type_output("NAME: #{@name} \n")
-    type_output("SPECIES: #{@type.class} \n")
-    type_output("GEMS: #{@@store[:gems]} \n")
+    type_it("NAME: #{@name} \n")
+    type_it("SPECIES: #{@type.class} \n")
+    type_it("GEMS: #{@@store[:gems]} \n")
     puts LINE_BREAK
   end
 end
