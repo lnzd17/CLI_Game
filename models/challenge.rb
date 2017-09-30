@@ -3,22 +3,22 @@ class Challenge
 
   attr_accessor :player, :messages, :actions, :answers
 
-  def initialize(player, messages, actions)
-    @player = player
-    @messages = messages
-    @actions = actions
+  def initialize
+    @player = App.player
+    @story = App.char_story(App.player.char_type.class)
+    @actions = App.actions(App.player.char_type.class)
     @answers = {}
   end
 
   def task(key)
-    message = @messages[key][0]
-    response_one = @messages[key][1][0]
-    response_two = @messages[key][2][0]
-    responses = [response_one, response_two]
+    message = @story[key]['message']
+    option_one = @story[key]['options'][0][0]
+    option_two = @story[key]['options'][1][0]
+    options = [option_one, option_two]
 
-    until @answers[key] == response_one || @answers[key] == response_two
+    until @answers[key] == option_one || @answers[key] == option_two
       type_it(message)
-      @answers[key] = validate_input(gets.chomp, responses, ALTS['responses'])
+      @answers[key] = validate_input(gets.chomp, options, ALTS['responses'])
     end
 
     trigger_action(key)
@@ -27,11 +27,11 @@ class Challenge
   private
 
   def trigger_action(key)
-    pair_one = @messages[key][1]
-    count_one = @messages[key][1][1]
-    count_two = @messages[key][2][1]
+    option_one = @story[key]['options'][0]
+    count_one = @story[key]['options'][0][1]
+    count_two = @story[key]['options'][1][1]
     action = @actions[@answers[key]]
-    count = pair_one.include?(@answers[key]) ? count_one : count_two
+    count = option_one.include?(@answers[key]) ? count_one : count_two
 
     @player.char_type.move(@answers[key], count, action)
   end

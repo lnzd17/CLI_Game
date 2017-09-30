@@ -5,7 +5,7 @@ class Welcome
   def initialize
     @greetings = App.welcome
     @answers = {}
-    @chars = App.characters
+    @chars = App.character_list
   end
 
   def greeting
@@ -25,6 +25,6 @@ class Welcome
   end
 
   def create_player
-    App.update_player(Player.new(@answers['name'], @answers['character'], @chars))
+    App.update_player(Player.new(@answers['name'], @answers['character']))
   end
 end

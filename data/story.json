@@ -1,9 +1,9 @@
 {
-  "Characters" : [
+  "Characters": [
     "newt",
     "gibbon"
   ],
-  "Profile" : [
+  "Profile": [
     "NAME:",
     "SPECIES:",
     "💎  GEMS :"
@@ -14,27 +14,33 @@
     "character": "Will you journey as a Newt or Gibbon? \n \n"
   },
   "Newt": {
-    "messages": {
-      "task_one": [
-        "🌄 💎  Your leader has commanded you to seek out and return an ancient relic to its proper place. \n This relic was lost to your people thousands of years ago. \n Your leader implies you will be reimbursed for your efforts. \n Do you name your price? \n \n", [
-          "accept",
-          5
-        ],
-        [
-          "decline",
-          3
+    "story": {
+      "task_one": {
+        "message": "🌄 💎  Your leader has commanded you to seek out and return an ancient relic to its proper place. \n This relic was lost to your people thousands of years ago. \n Your leader implies you will be reimbursed for your efforts. \n Do you name your price? \n \n",
+        "options": [
+          [
+            "accept",
+            5
+          ],
+          [
+            "decline",
+            3
+          ]
         ]
-      ],
-      "task_two": [
-        "👝 Pack for trip...weapon or encyclopedia \n", [
-          "weapon",
-          0
-        ],
-        [
-          "encyclopedia",
-          3
+      },
+      "task_two": {
+        "message": "👝 Pack for trip...weapon or encyclopedia \n",
+        "options": [
+          [
+            "weapon",
+            0
+          ],
+          [
+            "encyclopedia",
+            3
+          ]
         ]
-      ]
+      }
     },
     "actions": {
       "accept": "You ask for 4 gems, however your leader respects your tenacity and gives you 5",
@@ -44,27 +50,33 @@
     }
   },
   "Gibbon": {
-    "messages": {
-      "task_one": [
-        "🌄 💎  You have been honored with the task of finding a beautiful ancient relic. \n This will bring prosperity to your people and will ensure its future place in the world. \n Your leader has offered you gems for your sacrifice. \n Do you accept? \n \n", [
-          "accept",
-          3
-        ],
-        [
-          "decline",
-          5
+    "story": {
+      "task_one": {
+        "message": "🌄 💎  You have been honored with the task of finding a beautiful ancient relic. \n This will bring prosperity to your people and will ensure its future place in the world. \n Your leader has offered you gems for your sacrifice. \n Do you accept? \n \n",
+        "options": [
+          [
+            "accept",
+            3
+          ],
+          [
+            "decline",
+            5
+          ]
         ]
-      ],
-      "task_two": [
-        "👝 Pack for trip...weapon or encyclopedia \n", [
-          "weapon",
-          0
-        ],
-        [
-          "encyclopedia",
-          3
+      },
+      "task_two": {
+        "message": "👝 Pack for trip...weapon or encyclopedia \n",
+        "options": [
+          [
+            "weapon",
+            0
+          ],
+          [
+            "encyclopedia",
+            2
+          ]
         ]
-      ]
+      }
     },
     "actions": {
       "accept": "You eagerly accept, but notice a look of annoyance on your leader's face as she hands over 3 gems",

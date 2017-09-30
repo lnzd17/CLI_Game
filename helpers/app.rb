@@ -7,18 +7,18 @@ module App
   include UserInput
 
   file = File.read('./data/story.json')
-  story = JSON.parse(file)
+  world = JSON.parse(file)
 
   file2 = File.read('./data/alts.json')
   ALTS = JSON.parse(file2).freeze
 
   @@store = { gems: 0,
-              story: story,
+              world: world,
               player: ''}
 
-  def self.recall(key)
-    @@store[key.to_sym]
-  end
+  # def self.recall(key)
+  #   @@store[key.to_sym]
+  # end
 
   def self.gems
     @@store[:gems]
@@ -36,31 +36,31 @@ module App
     @@store[:player] = player
   end
 
-  def self.story
-    @@store[:story]
+  def self.world
+    @@store[:world]
   end
 
-  def self.char_story(story_key)
-    self.story[story_key.to_s]
+  def self.character(world_key)
+    self.world[world_key.to_s]
   end
 
-  def self.messages(story_key)
-    self.story[story_key.to_s]['messages']
+  def self.char_story(world_key)
+    self.world[world_key.to_s]['story']
   end
 
-  def self.actions(story_key)
-    self.story[story_key.to_s]['actions']
+  def self.actions(world_key)
+    self.world[world_key.to_s]['actions']
   end
 
-  def self.characters
-    self.story['Characters']
+  def self.character_list
+    self.world['Characters']
   end
 
   def self.welcome
-    self.story['Welcome']
+    self.world['Welcome']
   end
 
   def self.profile
-    self.story['Profile']
+    self.world['Profile']
   end
 end

@@ -3,7 +3,7 @@ class Player
 
   attr_accessor :name, :char_type
 
-  def initialize(name, char_type, chars)
+  def initialize(name, char_type)
     @name = name
     @char_type = Character.create(char_type)
   end
