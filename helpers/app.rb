@@ -16,9 +16,6 @@ module App
               world: world,
               player: ''}
 
-  # def self.recall(key)
-  #   @@store[key.to_sym]
-  # end
 
   def self.gems
     @@store[:gems]
