@@ -3,6 +3,16 @@
     "newt",
     "gibbon"
   ],
+  "Profile" : [
+    "NAME:",
+    "SPECIES:",
+    "💎  GEMS :"
+  ],
+  "Welcome": {
+    "greeting": "You have entered the world of [placeholder]",
+    "name": "What will you call your character? \n \n",
+    "character": "Will you journey as a Newt or Gibbon? \n \n"
+  },
   "Newt": {
     "messages": {
       "task_one": [
@@ -62,10 +72,5 @@
       "weapon": "⚔️",
       "encyclopedia": "📖"
     }
-  },
-  "Welcome": {
-    "greeting": "You have entered the world of [placeholder]",
-    "name": "What will you call your character? \n \n",
-    "character": "Will you journey as a Newt or Gibbon? \n \n"
   }
 }

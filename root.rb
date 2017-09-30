@@ -1,5 +1,4 @@
-# include helpers
-require './helpers/data_parser'
+# include helper
 require './helpers/app.rb'
 
 # include models
@@ -8,7 +7,7 @@ require './models/player.rb'
 require './models/character.rb'
 require './models/gibbon.rb'
 require './models/newt.rb'
-require './models/challenge_one.rb'
+require './models/challenge.rb'
 
 
 # include first prompt

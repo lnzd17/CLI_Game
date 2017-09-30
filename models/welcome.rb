@@ -1,30 +1,30 @@
 class Welcome
   include App
-  attr_accessor :messages, :answers, :chars
+  attr_accessor :greetings, :answers, :chars
 
-  def initialize(messages, chars)
-    @messages = messages
+  def initialize
+    @greetings = App.welcome
     @answers = {}
-    @chars = chars
+    @chars = App.characters
   end
 
   def greeting
-    puts @messages['greeting']
+    puts @greetings['greeting']
   end
 
   def user_data
     until @answers['name']
-      type_it(@messages['name'])
+      type_it(@greetings['name'])
       @answers['name'] = ensure_input(gets.chomp)
     end
 
     until @chars.include?(@answers['character'])
-      type_it(@messages['character'])
+      type_it(@greetings['character'])
       @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
     end
   end
 
   def create_player
-    @@store[:player] = Player.new(@answers['name'], @answers['character'], @chars)
+    App.update_player(Player.new(@answers['name'], @answers['character'], @chars))
   end
 end

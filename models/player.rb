@@ -10,15 +10,15 @@ class Player
 
   def profile
     puts LINE_BREAK
-    type_it("NAME: #{@name} \n")
-    type_it("SPECIES: #{@type.class} \n")
-    type_it("GEMS: #{@@store[:gems]} \n")
+    type_it("#{App.profile[0]} #{@name} \n")
+    type_it("#{App.profile[1]} #{@type.class} \n")
+    type_it("#{App.profile[2]} #{App.gems} \n")
     puts LINE_BREAK
   end
 
   def gem_count
     puts LINE_BREAK
-    type_it("GEMS: #{@@store[:gems]} \n")
+    type_it("#{App.profile[2]} #{App.gems} \n")
     puts LINE_BREAK
   end
 end

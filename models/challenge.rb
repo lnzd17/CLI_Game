@@ -1,4 +1,4 @@
-class ChallengeOne
+class Challenge
   include App
 
   attr_accessor :player, :messages, :actions, :answers
