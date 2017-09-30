@@ -21,8 +21,6 @@ class Challenge
     trigger_action(key)
   end
 
-
-
   private
 
   def trigger_action(key)
@@ -30,7 +28,7 @@ class Challenge
     action = @actions[@answers[key]]
     count = option_one.include?(@answers[key]) ? count_one(key) : count_two(key)
 
-    @player.char_type.move(@answers[key], count, action)
+    @player.char_type.move(count, action)
   end
 
   def message(key)

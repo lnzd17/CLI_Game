@@ -7,6 +7,5 @@ require './models/player.rb'
 require './models/character.rb'
 require './models/challenge.rb'
 
-
 # include first prompt
 require './prompts/setup_game'

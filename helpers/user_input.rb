@@ -4,6 +4,7 @@ module UserInput
   def ensure_input(user_input)
     if /^[a-zA-Z0-9]/ =~ user_input
       clean(user_input)
+      true
     else
       puts ERRORS[:wrong_input]
       false
@@ -11,9 +12,9 @@ module UserInput
   end
 
   def validate_input(user_input, arr, alts)
-    return if !ensure_input(user_input)
+    return unless ensure_input(user_input)
     input = convert(clean(user_input), alts)
-    
+
     if arr.include?(input)
       arr[arr.find_index(input)]
     else

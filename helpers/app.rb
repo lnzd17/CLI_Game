@@ -14,9 +14,7 @@ module App
 
   @@store = { gems: 0,
               world: world,
-              player: ''}
-
-
+              player: '' }
   def self.gems
     @@store[:gems]
   end
@@ -38,26 +36,26 @@ module App
   end
 
   def self.character(world_key)
-    self.world[world_key.to_s]
+    world[world_key.to_s]
   end
 
   def self.char_story(world_key)
-    self.world[world_key.to_s]['story']
+    world[world_key.to_s]['story']
   end
 
   def self.actions(world_key)
-    self.world[world_key.to_s]['actions']
+    world[world_key.to_s]['actions']
   end
 
   def self.character_list
-    self.world['Characters']
+    world['Characters']
   end
 
   def self.welcome
-    self.world['Welcome']
+    world['Welcome']
   end
 
   def self.profile
-    self.world['Profile']
+    world['Profile']
   end
 end

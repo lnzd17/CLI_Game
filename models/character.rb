@@ -6,7 +6,7 @@ class Character
     klass.new
   end
 
-  def move(response, count, action)
+  def move(count, action)
     App.update_gems(count)
     format_action(action)
     App.player.gem_count

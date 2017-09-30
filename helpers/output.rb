@@ -1,9 +1,8 @@
 require 'colorize'
 
 module Output
-
   LINE_BREAK = '**************************'.colorize(:cyan).freeze
-  
+
   def delay_output(loop_num, output, delay_time)
     1.upto(loop_num) do
       puts output
