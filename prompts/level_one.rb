@@ -1,5 +1,4 @@
-file = File.read('./story.json')
-data = JSON.parse(file)
+data = App.recall('story')
 
 player = App.recall('player')
 type = player.type.class

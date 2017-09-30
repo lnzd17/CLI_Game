@@ -1,10 +1,11 @@
 class Welcome
   include App
-  attr_accessor :messages, :answers
+  attr_accessor :messages, :answers, :chars
 
-  def initialize(messages)
+  def initialize(messages, chars)
     @messages = messages
     @answers = {}
+    @chars = chars
   end
 
   def greeting
@@ -17,13 +18,13 @@ class Welcome
       @answers['name'] = ensure_input(gets.chomp)
     end
 
-    until CHARS.include?(@answers['character'])
+    until @chars.include?(@answers['character'])
       type_it(@messages['character'])
-      @answers['character'] = validate_input(gets.chomp, CHARS, ALTS['chars'])
+      @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
     end
   end
 
   def create_player
-    @@store[:player] = Player.new(@answers['name'], @answers['character'])
+    @@store[:player] = Player.new(@answers['name'], @answers['character'], @chars)
   end
 end

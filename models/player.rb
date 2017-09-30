@@ -3,9 +3,9 @@ class Player
 
   attr_accessor :name, :type
 
-  def initialize(name, type)
+  def initialize(name, type, chars)
     @name = name
-    @type = type == CHARS[0] ? Newt.new : Gibbon.new
+    @type = type == chars[0] ? Newt.new : Gibbon.new
   end
 
   def profile

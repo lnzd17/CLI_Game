@@ -1,9 +1,7 @@
-file = File.read('./story.json')
-data = JSON.parse(file)
-
 require './prompts/back_story.rb'
 
-setup = Welcome.new(data['Welcome'])
+data = App.recall('story')
+setup = Welcome.new(data['Welcome'], data['Characters'])
 setup.greeting
 setup.user_data
 setup.create_player
