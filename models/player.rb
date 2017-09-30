@@ -1,17 +1,17 @@
 class Player
   include App
 
-  attr_accessor :name, :type
+  attr_accessor :name, :char_type
 
-  def initialize(name, type, chars)
+  def initialize(name, char_type, chars)
     @name = name
-    @type = type == chars[0] ? Newt.new : Gibbon.new
+    @char_type = Character.create(char_type)
   end
 
   def profile
     puts LINE_BREAK
     type_it("#{App.profile[0]} #{@name} \n")
-    type_it("#{App.profile[1]} #{@type.class} \n")
+    type_it("#{App.profile[1]} #{@char_type.class} \n")
     type_it("#{App.profile[2]} #{App.gems} \n")
     puts LINE_BREAK
   end

@@ -1,2 +1,0 @@
-class Gibbon < Character
-end

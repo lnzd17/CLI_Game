@@ -33,6 +33,6 @@ class Challenge
     action = @actions[@answers[key]]
     count = pair_one.include?(@answers[key]) ? count_one : count_two
 
-    @player.type.move(@answers[key], count, action)
+    @player.char_type.move(@answers[key], count, action)
   end
 end

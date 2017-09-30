@@ -5,8 +5,6 @@ require './helpers/app.rb'
 require './models/welcome.rb'
 require './models/player.rb'
 require './models/character.rb'
-require './models/gibbon.rb'
-require './models/newt.rb'
 require './models/challenge.rb'
 
 

@@ -12,8 +12,6 @@ module App
   file2 = File.read('./data/alts.json')
   ALTS = JSON.parse(file2).freeze
 
-  LINE_BREAK = '**************************'.colorize(:cyan).freeze
-  
   @@store = { gems: 0,
               story: story,
               player: ''}
