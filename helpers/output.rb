@@ -19,6 +19,8 @@ module Output
   end
 
   def format_action(action)
+    puts " "
     print "* #{action} *\n".colorize(:yellow).on_black
+    puts " "
   end
 end

@@ -16,7 +16,7 @@
   "Indara": {
     "story": {
       "task_one": {
-        "message": "🌄 💎  Raska, your tribe leader, has commanded you to seek out and return an ancient relic to its proper place. \n This relic was lost to your people thousands of years ago, he explains. \n Raska implies you will be reimbursed for your tribal duty. \n Do you name your price? \n \n",
+        "message": "🌄 💎  Raska, your tribe leader, has commanded you to seek out and return an ancient relic to its proper place. \nThis relic was lost to your people thousands of years ago, he explains. \nRaska implies you will be reimbursed for your tribal duty. \nDo you name your price? \n \n",
         "options": [
           [
             "accept",
@@ -29,14 +29,14 @@
         ]
       },
       "task_two": {
-        "message": "👝 Pack for trip...weapon or encyclopedia \n",
+        "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic. \nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and tribal token for luck. \nYou only have room for one more item. \nDo you decide to take your compact yet deadly 'Flinger' or your wireless 'Comm'?\n",
         "options": [
           [
-            "weapon",
+            "flinger",
             0
           ],
           [
-            "encyclopedia",
+            "comm",
             3
           ]
         ]
@@ -45,8 +45,8 @@
     "actions": {
       "accept": "You casually request 4 gems. Raska smirks quickly. He is reaffirmed in his decision \nas you are strong ambitious member of the tribe. He tosses you a bag of 5 gems and departs.",
       "decline": "You decline politely. Raska flicks his tongue in annoyance. He throws 3 gems your way and dismisses you and hopes that you will succeed",
-      "weapon": "⚔️",
-      "encyclopedia": "📖"
+      "flinger": "⚔️",
+      "comm": "📶"
     }
   },
   "Qallae": {
@@ -82,7 +82,7 @@
       "accept": "You eagerly accept, but notice a look of annoyance on your leader's face as she hands over 3 gems",
       "decline": "You politely decline, as bringing honor to your people is enough payment. Your leader smiles and insists you take 5 gems",
       "weapon": "⚔️",
-      "encyclopedia": "📖"
+      "encyclopedia": "📶"
     }
   }
 }
