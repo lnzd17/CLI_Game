@@ -10,7 +10,7 @@ class Player
 
   def profile
     puts LINE_BREAK
-    type_it("#{App.profile[0]} #{@name} \n")
+    type_it("#{App.profile[0]} #{@name.capitalize} \n")
     type_it("#{App.profile[1]} #{@char_type.class} \n")
     type_it("#{App.profile[2]} #{App.gems} \n")
     puts LINE_BREAK

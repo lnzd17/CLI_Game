@@ -14,24 +14,26 @@
     ],
     "weapon": [
       "weapon",
-      "wep",
+      "wea",
       "w"
     ],
     "encyclopedia": [
       "encyclopedia",
-      "pedia",
+      "enc",
       "e"
     ]
   },
   "chars": {
-    "qallame": [
-      "qallame",
+    "qallae": [
+      "qallae",
       "qal",
+      "qa",
       "q"
     ],
     "indara": [
       "indara",
       "ind",
+      "in",
       "i"
     ]
   }

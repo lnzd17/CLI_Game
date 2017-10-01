@@ -13,14 +13,14 @@ class Welcome
   end
 
   def user_data
-    until @answers['name']
-      type_it(@greetings['name'])
-      @answers['name'] = ensure_input(gets.chomp)
-    end
-
     until @chars.include?(@answers['character'])
       type_it(@greetings['character'])
       @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
+    end
+
+    until @answers['name']
+      type_it(@greetings['name'])
+      @answers['name'] = ensure_input(gets.chomp)
     end
   end
 
