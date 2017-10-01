@@ -29,14 +29,14 @@
         ]
       },
       "task_two": {
-        "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic. \nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and tribal token for luck. \nYou only have room for one more item. \nDo you decide to take your compact yet deadly 'Flinger' or your wireless 'Comm'?\n",
+        "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic. \nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and a wireless comm. \nYou only have room for one more item. \nDo you decide to take your compact yet deadly 'Flinger' or a tribal 'Token' for good luck?\n",
         "options": [
           [
             "flinger",
             0
           ],
           [
-            "comm",
+            "token",
             3
           ]
         ]
@@ -46,7 +46,7 @@
       "accept": "You casually request 4 gems. Raska smirks quickly. He is reaffirmed in his decision \nas you are strong ambitious member of the tribe. He tosses you a bag of 5 gems and departs.",
       "decline": "You decline politely. Raska flicks his tongue in annoyance. He throws 3 gems your way and dismisses you and hopes that you will succeed",
       "flinger": "⚔️",
-      "comm": "📶"
+      "token": "🔮"
     }
   },
   "Qallae": {
