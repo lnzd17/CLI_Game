@@ -52,7 +52,7 @@
   "Qallae": {
     "story": {
       "task_one": {
-        "message": "🌄 💎  You have been honored with the task of finding a beautiful ancient relic. \n This will bring prosperity to your people and will ensure its future place in the world. \n Your leader has offered you gems for your sacrifice. \n Do you accept? \n \n",
+        "message": "🌄 💎  Your pack leader Denala, has called you into her nest to speak privately. \nShe honors you by permitting you leave from the pack in order to locate a beautiful recently discovered artifact. \nThis mysterious artifact will bring prosperity to your people and will ensure their future place in the world. \nDenala customarily offers you gems for your sacrifice. Do you accept? \n \n",
         "options": [
           [
             "accept",
@@ -79,10 +79,10 @@
       }
     },
     "actions": {
-      "accept": "You eagerly accept, but notice a look of annoyance on your leader's face as she hands over 3 gems",
-      "decline": "You politely decline, as bringing honor to your people is enough payment. Your leader smiles and insists you take 5 gems",
+      "accept": "You eagerly accept, but notice a look of annoyance on Denala's face as she promptly hands over 3 gems and dismisses you from her quarters",
+      "decline": "You politely decline, professing that bringing honor to your people is the only payment you need.\nDenala bows and and then smiles while offering up 5 gems. You graciously accept.",
       "weapon": "⚔️",
-      "encyclopedia": "📶"
+      "encyclopedia": "🔮"
     }
   }
 }
