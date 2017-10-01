@@ -4,7 +4,6 @@ module UserInput
   def ensure_input(user_input)
     if /^[a-zA-Z0-9]/ =~ user_input
       clean(user_input)
-      true
     else
       puts ERRORS[:wrong_input]
       false
@@ -33,6 +32,7 @@ module UserInput
   end
 
   def clean(user_input)
-    user_input.downcase.strip
+    input = user_input.downcase.strip
+    input.length > 20 ? input[0..21] : input
   end
 end

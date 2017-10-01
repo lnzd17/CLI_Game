@@ -1,7 +1,7 @@
 {
   "Characters": [
-    "newt",
-    "gibbon"
+    "indara",
+    "qallame"
   ],
   "Profile": [
     "NAME:",
@@ -9,11 +9,11 @@
     "💎  GEMS :"
   ],
   "Welcome": {
-    "greeting": "You have entered the world of [placeholder]",
+    "greeting": "You have entered the world of Tantamount \n",
     "name": "What will you call your character? \n \n",
-    "character": "Will you journey as a Newt or Gibbon? \n \n"
+    "character": "Will you journey as an Indara or Qallame? \n \n"
   },
-  "Newt": {
+  "Indara": {
     "story": {
       "task_one": {
         "message": "🌄 💎  Your leader has commanded you to seek out and return an ancient relic to its proper place. \n This relic was lost to your people thousands of years ago. \n Your leader implies you will be reimbursed for your efforts. \n Do you name your price? \n \n",
@@ -49,7 +49,7 @@
       "encyclopedia": "📖"
     }
   },
-  "Gibbon": {
+  "Qallame": {
     "story": {
       "task_one": {
         "message": "🌄 💎  You have been honored with the task of finding a beautiful ancient relic. \n This will bring prosperity to your people and will ensure its future place in the world. \n Your leader has offered you gems for your sacrifice. \n Do you accept? \n \n",

@@ -9,7 +9,7 @@ class Welcome
   end
 
   def greeting
-    puts @greetings['greeting']
+    type_it(@greetings['greeting'])
   end
 
   def user_data

@@ -1,4 +1,4 @@
-require './prompts/back_story.rb'
+require './prompts/splash.rb'
 
 setup = Welcome.new
 setup.greeting
