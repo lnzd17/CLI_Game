@@ -54,4 +54,4 @@ puts '- input must be 20 characters or less'
 puts '**********************************************************************************************************************'
 puts ' '
 
-UserInput.game_start
+App.game_start

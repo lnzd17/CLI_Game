@@ -1,5 +1,3 @@
-
-
 setup = Setup.new
 setup.greeting
 setup.player_data

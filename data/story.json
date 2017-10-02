@@ -9,7 +9,7 @@
     "💎  GEMS :"
   ],
   "Welcome": {
-    "greeting": "You have entered the world of Tantamount.\nThis world is lush and populated with all forms of life, however only two species dominate the land.\nThe Indaras and the Mazeins are eternallly at odds with eachother, yet neither is prey nor hunter to the other.\nOne spends much of their time in bodies of water while the other calls the treetops their home.\nAs both empires expand into the Age of Awareness their ecosystems are increasingly overlapping. \nLeaders on both sides feel a war brewing. \n \n",
+    "greeting": "\nYou have entered the world of Tantamount.\nThis world is lush and populated with all forms of life, however only two species dominate the land.\nThe Indaras and the Mazeins are eternallly at odds with eachother, yet neither is prey nor hunter to the other.\nOne spends much of their time in bodies of water while the other calls the treetops their home.\nAs both empires expand into the Age of Awareness their ecosystems are increasingly overlapping. \nLeaders on both sides feel a war brewing. \n \n",
     "name": "What will you call your character? \n \n",
     "character": "You have come here to embody an individual from one of the two species.\nIt is up to you prevent calamity and seek understanding. Will you journey as an Indara or Mazei? \n \n"
   },
@@ -17,7 +17,7 @@
     "challenge_one":4
   },
   "Warnings": {
-    "challenge_one":"You did not aquire enough gems to proceed. You will be sent back to the beginning of challenge one\n"
+    "challenge_one":"You did not aquire enough gems to proceed. You will be sent back to the beginning of challenge one\n \n"
   },
   "Indara": {
     "story": {
@@ -35,7 +35,7 @@
         ]
       },
       "task_two": {
-        "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic. \nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and a wireless comm. \nYou only have room for one more item. \nDo you decide to take your compact yet deadly 'Flinger' or a tribal 'Token' for good luck?\n",
+        "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic. \nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and a wireless comm. \nYou only have room for one more item. \nDo you decide to take your compact yet deadly 'Flinger' or a tribal 'Token' for good luck?\n \n",
         "options": [
           [
             "flinger",

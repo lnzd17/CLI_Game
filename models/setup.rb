@@ -19,10 +19,9 @@ class Setup
       print_again(@greetings['character'])
     end
 
-    type_it(@greetings['name'])
     until @answers['name']
       @answers['name'] = ensure_input(gets.chomp)
-      print_again(@greetings['name'])
+      type_it(@greetings['name'])
     end
   end
 

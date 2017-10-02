@@ -1,19 +1,6 @@
 module UserInput
   ERRORS = { wrong_input: 'oops try again' }.freeze
 
-  def self.game_start
-    puts 'Enter game? (y/n)'.colorize(:red)
-    answer = gets.chomp.downcase.strip
-    case answer
-    when 'yes', 'y'
-      require './prompts/setup_game.rb'
-    when 'no', 'n', 'exit'
-      exit
-    else
-      exit
-    end
-  end
-
   def ensure_input(user_input)
     if /^[a-zA-Z0-9]/ =~ user_input
       clean(user_input)

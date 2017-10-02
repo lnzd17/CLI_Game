@@ -1,2 +1,1 @@
-1) limit input length
-2) disclaimer about rules and emoji fonts
+1) refactor game_start and benchmark_check
