@@ -54,14 +54,4 @@ puts '- input must be 20 characters or less'
 puts '**********************************************************************************************************************'
 puts ' '
 
-
-puts 'Enter game?'.colorize(:red)
-answer = gets.chomp
-case answer
-when 'yes', 'y'
-  require './prompts/setup_game.rb'
-when 'no', 'n', 'exit'
-  exit
-else
-  exit
-end
+UserInput.game_start
