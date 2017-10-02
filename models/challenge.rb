@@ -14,9 +14,10 @@ class Challenge
   def task(key)
     options = [option_one(key), option_two(key)]
 
+    type_it(message(key))
     until @answers[key] == option_one(key) || @answers[key] == option_two(key)
-      type_it(message(key))
       @answers[key] = validate_input(gets.chomp, options, ALTS['responses'])
+      print_again(message(key))
     end
 
     trigger_action(key)

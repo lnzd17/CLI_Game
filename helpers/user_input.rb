@@ -18,7 +18,9 @@ module UserInput
     if /^[a-zA-Z0-9]/ =~ user_input
       clean(user_input)
     else
-      puts ERRORS[:wrong_input]
+      puts ''
+      puts ERRORS[:wrong_input].colorize(:yellow)
+      puts ''
       false
     end
   end
@@ -30,7 +32,9 @@ module UserInput
     if arr.include?(input)
       arr[arr.find_index(input)]
     else
-      puts ERRORS[:wrong_input]
+      puts ''
+      puts ERRORS[:wrong_input].colorize(:yellow)
+      puts ''
     end
   end
 

@@ -9,11 +9,15 @@ module Output
     puts "\n"
   end
 
+  def print_again(message)
+    print message.colorize(:red)
+  end
+
   def type_it(message)
     words = message.split(/(\W)/)
     words.each do |w|
       print w.colorize(:green)
-      sleep 0.1
+      sleep 0.01
     end
   end
 

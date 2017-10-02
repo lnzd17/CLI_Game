@@ -13,14 +13,16 @@ class Setup
   end
 
   def player_data
+    type_it(@greetings['character'])
     until @chars.include?(@answers['character'])
-      type_it(@greetings['character'])
       @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
+      print_again(@greetings['character'])
     end
 
+    type_it(@greetings['name'])
     until @answers['name']
-      type_it(@greetings['name'])
       @answers['name'] = ensure_input(gets.chomp)
+      print_again(@greetings['name'])
     end
   end
 
