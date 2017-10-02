@@ -1,8 +1,8 @@
-require './prompts/splash.rb'
 
-setup = Welcome.new
+
+setup = Setup.new
 setup.greeting
-setup.user_data
+setup.player_data
 setup.create_player
 App.player.profile
 

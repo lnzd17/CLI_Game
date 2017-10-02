@@ -1,11 +1,12 @@
 # include helper
-require './helpers/app.rb'
+require './helpers/app'
 
 # include models
-require './models/welcome.rb'
-require './models/player.rb'
-require './models/character.rb'
-require './models/challenge.rb'
+require './models/challenge'
+require './models/character'
+require './models/player'
+require './models/setup'
+
 
 # include first prompt
-require './prompts/setup_game'
+require './prompts/splash'

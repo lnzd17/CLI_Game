@@ -8,7 +8,7 @@ class Challenge
     @story = App.char_story(App.player.char_type.class)
     @actions = App.actions(App.player.char_type.class)
     @answers = {}
-    @level = level
+    @level = App.levels[level]
   end
 
   def task(key)

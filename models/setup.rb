@@ -1,4 +1,4 @@
-class Welcome
+class Setup
   include App
   attr_accessor :greetings, :answers, :chars
 
@@ -12,7 +12,7 @@ class Welcome
     type_it(@greetings['greeting'])
   end
 
-  def user_data
+  def player_data
     until @chars.include?(@answers['character'])
       type_it(@greetings['character'])
       @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])

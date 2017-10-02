@@ -14,9 +14,15 @@ module App
 
   @@store = { gems: 0,
               world: world,
-              player: '' }
+              player: '',
+              levels: {1 => 'challenge_one'}
+            }
   def self.gems
     @@store[:gems]
+  end
+
+  def self.levels
+    @@store[:levels]
   end
 
   def self.update_gems(count)
