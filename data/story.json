@@ -1,7 +1,7 @@
 {
   "Characters": [
     "indara",
-    "Mazei"
+    "mazei"
   ],
   "Profile": [
     "NAME:",
@@ -12,6 +12,12 @@
     "greeting": "You have entered the world of Tantamount.\nThis world is lush and populated with all forms of life, however only two species dominate the land.\nThe Indaras and the Mazeins are eternallly at odds with eachother, yet neither is prey nor hunter to the other.\nOne spends much of their time in bodies of water while the other calls the treetops their home.\nAs both empires expand into the Age of Awareness their ecosystems are increasingly overlapping. \nLeaders on both sides feel a war brewing. \n \n",
     "name": "What will you call your character? \n \n",
     "character": "You have come here to embody an individual from one of the two species.\nIt is up to you prevent calamity and seek understanding. Will you journey as an Indara or Mazei? \n \n"
+  },
+  "Benchmarks":{
+    "challenge_one":4
+  },
+  "Warnings": {
+    "challenge_one":"You did not aquire enough gems to proceed. You will be sent back to the beginning of challenge one\n"
   },
   "Indara": {
     "story": {
@@ -68,7 +74,7 @@
         "message": "👝 You must pack quickly as next glider out of the forest leaves first thing in the morning.\n You pack the normal essentials, some dehydrated food, and a wireless comm. \nYou only have room for one more item in your pack. Do you bring a volatile but effective weapon a 'Gaser' \nor a 'Scroll' that can be manipulated to display any reference book from your Pack's library.\n",
         "options": [
           [
-            "weapon",
+            "gaser",
             0
           ],
           [
@@ -81,7 +87,7 @@
     "actions": {
       "accept": "You eagerly accept, but notice a look of annoyance on Denala's face as she promptly hands over 3 gems and dismisses you from her quarters",
       "decline": "You politely decline, professing that bringing honor to your people is the only payment you need.\nDenala bows and and then smiles while offering up 5 gems. You graciously accept.",
-      "weapon": "⚔️",
+      "gaser": "⚔️",
       "scroll": "📜"
     }
   }

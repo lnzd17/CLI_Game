@@ -35,6 +35,14 @@ module App
     @@store[:world]
   end
 
+  def self.benchmark(challenge)
+    world['Benchmarks'][challenge]
+  end
+
+  def self.warning(challenge)
+    world['Warnings'][challenge]
+  end
+
   def self.character(world_key)
     world[world_key.to_s]
   end
