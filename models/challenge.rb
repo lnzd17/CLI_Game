@@ -1,14 +1,14 @@
 class Challenge
-  include App
+  include Game
 
   attr_accessor :player, :messages, :actions, :answers, :level
 
   def initialize(level)
-    @player = App.player
-    @story = App.char_story(App.player.char_type.class)
-    @actions = App.actions(App.player.char_type.class)
+    @player = Game.player
+    @story = Game.char_story(Game.player.char_type.class)
+    @actions = Game.actions(Game.player.char_type.class)
     @answers = {}
-    @level = App.levels[level]
+    @level = Game.levels[level]
   end
 
   def task(key)

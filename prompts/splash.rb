@@ -54,4 +54,4 @@ puts '- input must be 20 characters or less'
 puts '**********************************************************************************************************************'
 puts ' '
 
-App.game_start
+PromptHelper.game_start

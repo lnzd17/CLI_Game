@@ -2,7 +2,7 @@ require './helpers/game_output'
 require './helpers/user_input'
 require 'json'
 
-module App
+module Game
   include GameOutput
   include UserInput
 
@@ -70,30 +70,5 @@ module App
 
   def self.profile
     world['Profile']
-  end
-
-  def self.game_start
-    puts 'Enter game? (y/n)'.colorize(:red)
-    answer = gets.chomp.downcase.strip
-
-    case answer
-    when 'yes', 'y'
-      require './prompts/setup_game.rb'
-    when 'no', 'n', 'exit'
-      exit
-    else
-      exit
-    end
-  end
-
-  def self.benchmark_check(current_level)
-    if App.jewels >= App.benchmark(current_level)
-      require './prompts/challenge_two.rb'
-    else
-      warn(App.warning(current_level))
-      App.update_jewels(-App.jewels)
-      App.player.profile
-      load('./prompts/challenge_one.rb')
-    end
   end
 end

@@ -1,11 +1,12 @@
 class Setup
-  include App
+  include Game
+
   attr_accessor :greetings, :answers, :chars
 
   def initialize
-    @greetings = App.welcome
+    @greetings = Game.welcome
     @answers = {}
-    @chars = App.character_list
+    @chars = Game.character_list
   end
 
   def greeting
@@ -29,6 +30,6 @@ class Setup
   end
 
   def create_player
-    App.update_player(Player.new(@answers['name'], @answers['character']))
+    Game.update_player(Player.new(@answers['name'], @answers['character']))
   end
 end

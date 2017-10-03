@@ -1,5 +1,5 @@
 class Player
-  include App
+  include Game
 
   attr_accessor :name, :char_type
 
@@ -10,15 +10,15 @@ class Player
 
   def profile
     puts LINE_BREAK
-    type_it("#{App.profile[0]} #{@name.capitalize} \n")
-    type_it("#{App.profile[1]} #{@char_type.class} \n")
-    type_it("#{App.profile[2]} #{App.jewels} \n")
+    type_it("#{Game.profile[0]} #{@name.capitalize} \n")
+    type_it("#{Game.profile[1]} #{@char_type.class} \n")
+    type_it("#{Game.profile[2]} #{Game.jewels} \n")
     puts LINE_BREAK
   end
 
   def jewel_count
     puts LINE_BREAK
-    type_it("#{App.profile[2]} #{App.jewels} \n")
+    type_it("#{Game.profile[2]} #{Game.jewels} \n")
     puts LINE_BREAK
   end
 end

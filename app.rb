@@ -1,5 +1,8 @@
 # include helper
-require './helpers/app'
+require './helpers/prompt_helper'
+
+# include game
+require './data/game'
 
 # include models
 require './models/challenge'
