@@ -22,6 +22,7 @@ module UserInput
       puts ''
       puts ERRORS[:wrong_input].colorize(:yellow)
       puts ''
+      false
     end
   end
 

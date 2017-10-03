@@ -1,9 +1,9 @@
-require './helpers/output'
+require './helpers/game_output'
 require './helpers/user_input'
 require 'json'
 
 module App
-  include Output
+  include GameOutput
   include UserInput
 
   file = File.read('./data/story.json')
@@ -15,8 +15,7 @@ module App
   @@store = { gems: 0,
               world: world,
               player: '',
-              levels: {1 => 'challenge_one'}
-            }
+              levels: { 1 => 'challenge_one' } }
   def self.gems
     @@store[:gems]
   end
@@ -91,7 +90,7 @@ module App
     if App.gems >= App.benchmark(current_level)
       require './prompts/challenge_two.rb'
     else
-      Output.warn(App.warning(current_level))
+      warn(App.warning(current_level))
       App.update_gems(-App.gems)
       App.player.profile
       load('./prompts/challenge_one.rb')

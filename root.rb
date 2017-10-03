@@ -7,6 +7,5 @@ require './models/character'
 require './models/player'
 require './models/setup'
 
-
 # include first prompt
 require './prompts/splash'

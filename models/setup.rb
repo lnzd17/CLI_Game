@@ -9,7 +9,8 @@ class Setup
   end
 
   def greeting
-    type_it(@greetings['greeting'])
+    # type_it(@greetings['greeting'])
+    puts 'hello'
   end
 
   def player_data
@@ -19,7 +20,7 @@ class Setup
       index += 1
       type_it(@greetings['character']) if index == 1
       @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
-      print_again(@greetings['character']) if !@chars.include?(@answers['character'])
+      print_again(@greetings['character']) unless @chars.include?(@answers['character'])
     end
 
     until @answers['name']
