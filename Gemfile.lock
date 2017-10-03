@@ -1,5 +1,5 @@
 GEM
-  remote: https://rubygems.org/
+  remote: https://rubyjewels.org/
   specs:
     ast (2.3.0)
     colorize (0.8.1)

@@ -1,14 +1,17 @@
-Metrics/LineLength:
-  Max: 127
-
-Style/Documentation:
- Enabled: false
-
 Metric/AbcSize:
   Max: 26
+
+Metrics/BlockLength:
+  Max: 32
+
+Metrics/LineLength:
+  Max: 127
 
 MethodLength:
   Max: 11
 
 Style/ClassVars:
   Enabled: false
+
+Style/Documentation:
+ Enabled: false

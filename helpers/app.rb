@@ -12,20 +12,20 @@ module App
   file2 = File.read('./data/alts.json')
   ALTS = JSON.parse(file2).freeze
 
-  @@store = { gems: 0,
+  @@store = { jewels: 0,
               world: world,
               player: '',
               levels: { 1 => 'challenge_one' } }
-  def self.gems
-    @@store[:gems]
+  def self.jewels
+    @@store[:jewels]
   end
 
   def self.levels
     @@store[:levels]
   end
 
-  def self.update_gems(count)
-    @@store[:gems] += count
+  def self.update_jewels(count)
+    @@store[:jewels] += count
   end
 
   def self.player
@@ -87,11 +87,11 @@ module App
   end
 
   def self.benchmark_check(current_level)
-    if App.gems >= App.benchmark(current_level)
+    if App.jewels >= App.benchmark(current_level)
       require './prompts/challenge_two.rb'
     else
       warn(App.warning(current_level))
-      App.update_gems(-App.gems)
+      App.update_jewels(-App.jewels)
       App.player.profile
       load('./prompts/challenge_one.rb')
     end

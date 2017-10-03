@@ -7,8 +7,8 @@ class Character
   end
 
   def move(count, action)
-    App.update_gems(count)
+    App.update_jewels(count)
     format_action(action)
-    App.player.gem_count
+    App.player.jewel_count
   end
 end

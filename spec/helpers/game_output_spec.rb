@@ -4,5 +4,5 @@ RSpec.configure do |c|
   c.include GameOutput
 end
 
-RSpec.describe 'GameOutput' do
+RSpec.describe GameOutput do
 end

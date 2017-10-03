@@ -38,6 +38,6 @@ module UserInput
 
   def clean(user_input)
     input = user_input.downcase.strip
-    input.length > 20 ? input[0..21] : input
+    input.length > 20 ? input[0..20] : input
   end
 end

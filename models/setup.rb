@@ -9,8 +9,7 @@ class Setup
   end
 
   def greeting
-    # type_it(@greetings['greeting'])
-    puts 'hello'
+    type_it(@greetings['greeting'])
   end
 
   def player_data

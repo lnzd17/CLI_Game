@@ -12,13 +12,13 @@ class Player
     puts LINE_BREAK
     type_it("#{App.profile[0]} #{@name.capitalize} \n")
     type_it("#{App.profile[1]} #{@char_type.class} \n")
-    type_it("#{App.profile[2]} #{App.gems} \n")
+    type_it("#{App.profile[2]} #{App.jewels} \n")
     puts LINE_BREAK
   end
 
-  def gem_count
+  def jewel_count
     puts LINE_BREAK
-    type_it("#{App.profile[2]} #{App.gems} \n")
+    type_it("#{App.profile[2]} #{App.jewels} \n")
     puts LINE_BREAK
   end
 end

@@ -6,7 +6,7 @@
   "Profile": [
     "NAME:",
     "SPECIES:",
-    "💎  GEMS :"
+    "💎  JEWELS :"
   ],
   "Welcome": {
     "greeting": "\nYou have entered the world of Tantamount.\nThis world is lush and populated with all forms of life, however only two species dominate the land.\nThe Indaras and the Mazeins are eternallly at odds with eachother, yet neither is prey nor hunter to the other.\nOne spends much of their time in bodies of water while the other calls the treetops their home.\nAs both empires expand into the Age of Awareness their ecosystems are increasingly overlapping. \nLeaders on both sides feel a war brewing. \n \n",
@@ -17,7 +17,7 @@
     "challenge_one":4
   },
   "Warnings": {
-    "challenge_one":"You did not aquire enough gems to proceed. You will be sent back to the beginning of challenge one\n \n"
+    "challenge_one":"You did not aquire enough jewels to proceed. You will be sent back to the beginning of challenge one\n \n"
   },
   "Indara": {
     "story": {
@@ -49,8 +49,8 @@
       }
     },
     "actions": {
-      "accept": "You casually request 4 gems. Raska smirks quickly. He is reaffirmed in his decision \nas you are strong ambitious member of the tribe. He tosses you a bag of 5 gems and departs.",
-      "decline": "You decline politely. Raska flicks his tongue in annoyance. He throws 3 gems your way and dismisses you and hopes that you will succeed",
+      "accept": "You casually request 4 jewels. Raska smirks quickly. He is reaffirmed in his decision \nas you are strong ambitious member of the tribe. He tosses you a bag of 5 jewels and departs.",
+      "decline": "You decline politely. Raska flicks his tongue in annoyance. He throws 3 jewels your way and dismisses you and hopes that you will succeed",
       "flinger": "⚔️",
       "token": "🔮"
     }
@@ -58,7 +58,7 @@
   "Mazei": {
     "story": {
       "task_one": {
-        "message": "🌄 💎  Your pack leader Denala, has called you into her nest to speak privately. \nShe honors you by permitting you leave from the pack in order to locate a beautiful recently discovered artifact. \nThis mysterious artifact will bring prosperity to your people and will ensure their future place in the world. \nDenala customarily offers you gems for your sacrifice. Do you accept payment? \n \n",
+        "message": "🌄 💎  Your pack leader Denala, has called you into her nest to speak privately. \nShe honors you by permitting you leave from the pack in order to locate a beautiful recently discovered artifact. \nThis mysterious artifact will bring prosperity to your people and will ensure their future place in the world. \nDenala customarily offers you jewels for your sacrifice. Do you accept payment? \n \n",
         "options": [
           [
             "accept",
@@ -85,8 +85,8 @@
       }
     },
     "actions": {
-      "accept": "You eagerly accept, but notice a look of annoyance on Denala's face as she promptly hands over 3 gems and dismisses you from her quarters",
-      "decline": "You politely decline, professing that bringing honor to your people is the only payment you need.\nDenala bows and and then smiles while offering up 5 gems. You graciously accept.",
+      "accept": "You eagerly accept, but notice a look of annoyance on Denala's face as she promptly hands over 3 jewels and dismisses you from her quarters",
+      "decline": "You politely decline, professing that bringing honor to your people is the only payment you need.\nDenala bows and and then smiles while offering up 5 jewels. You graciously accept.",
       "gaser": "⚔️",
       "scroll": "📜"
     }
