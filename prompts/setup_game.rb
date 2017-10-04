@@ -1,6 +1,7 @@
 setup = Setup.new
 setup.greeting
-setup.player_data
+setup.character_choice
+setup.player_name
 setup.create_player
 Game.player.profile
 
