@@ -1,10 +1,9 @@
 require 'json'
 class Builder
-  attr_accessor :template, :plain_text_dir
+  attr_accessor :template
 
   def initialize
     @template = JSON.parse(File.read('./data/template.json'))
-    @plain_text_dir = Dir["./data/plain_text/*"]
   end
 
   def value_str(name, *keys)
@@ -38,25 +37,12 @@ class Builder
     File.open("./data/new.json", "w+") {|f| f.write(@template.to_json) }
   end
 
-  def dir_files
-    @plain_text_dir.entries
-  end
-
   def text_file(name)
-    File.open(dir_files[dir_files.find_index(name)])
+    File.open(name)
   end
 
 end
 
-  # file = File.read('./data/template.json')
-  # template = JSON.parse(file)
-  #
-  # chars = File.open('./data/characters.txt')
-  #   chars.each do |line|
-  #     template['Characters'] << line.chomp
-  #   end
-  #
-  # File.open("./data/new.json", "w+") {|f| f.write(template.to_json) }
 build = Builder.new
 build.value_str('./data/plain_text/profile.txt', 'Profile')
 build.value_str('./data/plain_text/characters.txt', 'Characters')
