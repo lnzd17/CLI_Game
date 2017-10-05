@@ -49,7 +49,7 @@ module Game
   end
 
   def self.character(world_key)
-    world[world_key.to_s]
+    world[world_key.to_s].to_a
   end
 
   def self.char_story(world_key)
@@ -69,6 +69,6 @@ module Game
   end
 
   def self.profile
-    world['Profile']
+    world['Profile'].to_a
   end
 end

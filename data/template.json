@@ -1,0 +1,63 @@
+{
+  "Characters": [],
+  "Profile": [],
+  "Welcome": {
+    "greeting": "",
+    "name": "",
+    "character": ""
+  },
+  "Benchmarks": {
+    "challenge_one": ""
+  },
+  "Warnings": {
+    "challenge_one": ""
+  },
+  "Indara": {
+    "story": {
+      "task_one": {
+        "message": " ",
+        "options": [
+          [],
+          []
+        ]
+      },
+      "task_two": {
+        "message": " ",
+        "options": [
+          [],
+          []
+        ]
+      }
+    },
+    "actions": {
+      "accept": "",
+      "decline": "",
+      "flinger": "",
+      "token": ""
+    }
+  },
+  "Mazei": {
+    "story": {
+      "task_one": {
+        "message": " ",
+        "options": [
+          [],
+          []
+        ]
+      },
+      "task_two": {
+        "message": " ",
+        "options": [
+          [],
+          []
+        ]
+      }
+    },
+    "actions": {
+      "accept": " ",
+      "decline": " ",
+      "gaser": "",
+      "scroll": ""
+    }
+  }
+}
