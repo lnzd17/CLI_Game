@@ -10,11 +10,13 @@ module GameOutput
   end
 
   def print_again(message)
-    print message.colorize(:red)
+    n_message = message + "\n"
+    print n_message.colorize(:red)
   end
 
   def type_it(message)
-    words = message.split(/(\W)/)
+    n_message = message + "\n"
+    words = n_message.split(/(\W)/)
     words.each do |w|
       print w.colorize(:green)
       sleep 0.01

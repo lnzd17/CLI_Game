@@ -28,11 +28,18 @@ class Challenge
   private
 
   def trigger_action(key)
-    option_one = @story[key]['options'][0]
     action = @actions[@answers[key]]
-    count = option_one.include?(@answers[key]) ? count_one(key) : count_two(key)
+    count = options_counts(key)[0].include?(@answers[key]) ? count_one(key) : count_two(key)
 
     @player.char_type.move(count, action)
+  end
+
+  def options_counts(key)
+    new_arr = []
+    arr = @story[key]['options'].split(',')
+    new_arr << [arr[0], arr[1].to_i]
+    new_arr << [arr[2], arr[3].to_i]
+    new_arr
   end
 
   def message(key)
@@ -40,18 +47,18 @@ class Challenge
   end
 
   def option_one(key)
-    @story[key]['options'][0][0]
+    options_counts(key)[0][0]
   end
 
   def option_two(key)
-    @story[key]['options'][1][0]
+    options_counts(key)[1][0]
   end
 
   def count_one(key)
-    @story[key]['options'][0][1]
+    options_counts(key)[0][1]
   end
 
   def count_two(key)
-    @story[key]['options'][1][1]
+    options_counts(key)[1][1]
   end
 end

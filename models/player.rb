@@ -10,9 +10,9 @@ class Player
 
   def profile
     puts LINE_BREAK
-    type_it("#{Game.profile[0]} #{@name.capitalize} \n")
-    type_it("#{Game.profile[1]} #{@char_type.class} \n")
-    type_it("#{Game.profile[2]} #{Game.jewels} \n")
+    print "#{Game.profile[0]} #{@name.capitalize} \n"
+    print "#{Game.profile[1]} #{@char_type.class} \n"
+    print "#{Game.profile[2]} #{Game.jewels} \n"
     puts LINE_BREAK
   end
 

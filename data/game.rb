@@ -41,7 +41,7 @@ module Game
   end
 
   def self.benchmark(challenge)
-    world['Benchmarks'][challenge]
+    world['Benchmarks'][challenge].to_i
   end
 
   def self.warning(challenge)
@@ -49,7 +49,7 @@ module Game
   end
 
   def self.character(world_key)
-    world[world_key.to_s].to_a
+    world[world_key.to_s]
   end
 
   def self.char_story(world_key)
@@ -61,7 +61,7 @@ module Game
   end
 
   def self.character_list
-    world['Characters']
+    world['Characters'].split(',')
   end
 
   def self.welcome
@@ -69,6 +69,6 @@ module Game
   end
 
   def self.profile
-    world['Profile'].to_a
+    world['Profile'].split(',')
   end
 end
