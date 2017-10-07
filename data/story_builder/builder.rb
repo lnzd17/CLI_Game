@@ -3,7 +3,7 @@ class Builder
   attr_accessor :template, :dir
 
   def initialize
-    @template = JSON.parse(File.read('./data/story_builder/template.json'))
+    @template = Hash.new{ |h,k| h[k] = Hash.new(&h.default_proc) }
     @dir = Dir['./data/story_builder/plain_text/*']
   end
 
