@@ -1,9 +1,8 @@
 require './models/setup'
 require './models/character'
 require './models/player'
-
 RSpec.describe Setup do
-  let(:setup){ Setup.new }
+  let(:setup) { Setup.new }
   describe 'greeting' do
     it 'returns a greeting' do
       expect(setup.greeting).to eq(type_it(setup.greetings['greeting']))
@@ -11,9 +10,7 @@ RSpec.describe Setup do
   end
 
   describe 'player_name' do
-    it 'asks for and retrieves player_name' do
-      
-    end
+    it 'asks for and retrieves player_name'
   end
 
   describe 'create_player' do
