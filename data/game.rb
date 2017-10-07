@@ -9,9 +9,6 @@ module Game
   file = File.read('./data/story.json')
   world = JSON.parse(file)
 
-  file2 = File.read('./data/alts.json')
-  ALTS = JSON.parse(file2).freeze
-
   @@store = { jewels: 0,
               world: world,
               player: '',
@@ -19,6 +16,14 @@ module Game
 
   def self.actions(world_key)
     world[world_key.to_s]['actions']
+  end
+
+  def self.alt_chars
+    world['Alts']['chars']
+  end
+
+  def self.alt_resps
+    world['Alts']['responses']
   end
 
   def self.benchmark(challenge)

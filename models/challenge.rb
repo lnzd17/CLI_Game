@@ -18,7 +18,7 @@ class Challenge
     until @answers[key] == option_one(key) || @answers[key] == option_two(key)
       index += 1
       type_it(message(key)) if index == 1
-      @answers[key] = validate_input(gets.chomp, options, ALTS['responses'])
+      @answers[key] = validate_input(gets.chomp, options, Game.alt_resps)
       print_again(message(key)) unless @answers[key] == option_one(key) || @answers[key] == option_two(key)
     end
 

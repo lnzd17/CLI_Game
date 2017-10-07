@@ -1,1 +1,2 @@
-
+1) configs for: num of levels, num of chars, benchmarks, error warnings, num of options, text out put styles
+2) document file naming convention

@@ -1,4 +1,18 @@
 {
+  "Alts": {
+    "chars": {
+      "indara": "indara,ind,in,i",
+      "mazei": "mazei,maz,m"
+    },
+    "responses": {
+      "accept": "accept,yes,y,a",
+      "decline": "decline,no,n,d",
+      "flinger": "flinger,fli,f",
+      "gaser": "gaser,gas,g",
+      "scroll": "scroll,scr,s",
+      "token": "token,tok,t"
+    }
+  },
   "Benchmarks": "4",
   "Characters": "indara,mazei",
   "Indara": {

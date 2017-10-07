@@ -31,8 +31,9 @@ module UserInput
   def convert(user_input, alts)
     valid = user_input
     alts.each_key.to_a.map do |key|
-      valid = key if alts[key].include?(user_input)
+      valid = key if alts[key].split(',').include?(user_input)
     end
+
     valid
   end
 

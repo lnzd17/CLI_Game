@@ -18,7 +18,7 @@ class Setup
     until @chars.include?(@answers['character'])
       index += 1
       type_it(@greetings['character']) if index == 1
-      @answers['character'] = validate_input(gets.chomp, @chars, ALTS['chars'])
+      @answers['character'] = validate_input(gets.chomp, @chars, Game.alt_chars)
       print_again(@greetings['character']) unless @chars.include?(@answers['character'])
     end
   end
