@@ -1,32 +1,26 @@
 {
-  "Characters": [],
-  "Profile": [],
+  "Characters": "",
+  "Profile": "",
   "Welcome": {
     "greeting": "",
     "name": "",
     "character": ""
   },
   "Benchmarks": {
-    "challenge_one": ""
+    "challengeOne": ""
   },
   "Warnings": {
-    "challenge_one": ""
+    "challengeOne": ""
   },
   "Indara": {
     "story": {
-      "task_one": {
-        "message": " ",
-        "options": [
-          [],
-          []
-        ]
+      "taskOne": {
+        "message": "",
+        "options": ""
       },
-      "task_two": {
-        "message": " ",
-        "options": [
-          [],
-          []
-        ]
+      "taskTwo": {
+        "message": "",
+        "options": ""
       }
     },
     "actions": {
@@ -38,24 +32,18 @@
   },
   "Mazei": {
     "story": {
-      "task_one": {
-        "message": " ",
-        "options": [
-          [],
-          []
-        ]
+      "taskOne": {
+        "message": "",
+        "options": ""
       },
-      "task_two": {
-        "message": " ",
-        "options": [
-          [],
-          []
-        ]
+      "taskTwo": {
+        "message": "",
+        "options": ""
       }
     },
     "actions": {
-      "accept": " ",
-      "decline": " ",
+      "accept": "",
+      "decline": "",
       "gaser": "",
       "scroll": ""
     }

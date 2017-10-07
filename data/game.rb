@@ -15,7 +15,7 @@ module Game
   @@store = { jewels: 0,
               world: world,
               player: '',
-              levels: { 1 => 'challenge_one' } }
+              levels: { 1 => 'challengeOne' } }
   def self.jewels
     @@store[:jewels]
   end

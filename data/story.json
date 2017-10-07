@@ -6,19 +6,15 @@
     "name": "What will you call your character?",
     "character": "You have come here to embody an individual from one of the two species.\nIt is up to you prevent calamity and seek understanding.\nWill you journey as an Indara or Mazei?"
   },
-  "Benchmarks": {
-    "challenge_one": "4"
-  },
-  "Warnings": {
-    "challenge_one": "You did not acquire enough jewels to proceed. You will be sent back to the beginning of challenge one"
-  },
+  "Benchmarks": "4",
+  "Warnings": "You did not acquire enough jewels to proceed. You will be sent back to the beginning of challenge one",
   "Indara": {
     "story": {
-      "task_one": {
+      "taskOne": {
         "message": "🌄 💎  Raska, your tribe leader, has commanded you to seek out and return an ancient relic to its proper place.\nThis relic was lost to your people thousands of years ago, he explains. \nRaska implies you will be reimbursed for your tribal duty. Do you name your price?",
         "options": "accept,5,decline,3"
       },
-      "task_two": {
+      "taskTwo": {
         "message": "👝 You will meet Larna tomorrow morning as she is an expert on the ancient Relic.\nUntil then you will need to prepare for your journery.\nYou pack the normal essentials, some dehydrated food, and a wireless comm.\nYou only have room for one more item.\nDo you decide to take your compact yet deadly 'Flinger' or a tribal 'Token' for good luck?",
         "options": "flinger,0,token,3"
       }
@@ -32,11 +28,11 @@
   },
   "Mazei": {
     "story": {
-      "task_one": {
+      "taskOne": {
         "message": "🌄 💎  Your pack leader Denala, has called you into her nest to speak privately.\nShe honors you by permitting you leave from the pack in order to locate a beautiful recently discovered artifact.\nThis mysterious artifact will bring prosperity to your people and will ensure their future place in the world.\nDenala customarily offers you jewels for your sacrifice. Do you accept payment?",
         "options": "accept,3,decline,5"
       },
-      "task_two": {
+      "taskTwo": {
         "message": "You must pack quickly as next glider out of the forest leaves first thing in the morning.\nYou pack the normal essentials, some dehydrated food, and a wireless comm.\nYou only have room for one more item in your pack.\nDo you bring a volatile but effective weapon a 'Gaser'\nor a 'Scroll' that can be manipulated to display any reference book from your Pack's library.",
         "options": "gaser,0,scroll,5"
       }
