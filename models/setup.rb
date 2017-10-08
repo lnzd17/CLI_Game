@@ -31,7 +31,7 @@ class Setup
   end
 
   def create_player
-    if @answers['name'].nil? || @answers['name'].nil?
+    if @answers['name'].nil? || @answers['character'].nil?
       nil
     else
       Game.update_player(Player.new(@answers['name'], @answers['character']))

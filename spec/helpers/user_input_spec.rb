@@ -5,7 +5,7 @@ RSpec.configure do |c|
 end
 
 RSpec.describe UserInput do
-  let(:responses) { { 'yes' => %w[yes y] } }
+  let(:responses) { { 'yes' => 'yes,y' } }
   describe 'ensure_input' do
     it 'ensures user_input not blank' do
       expect(ensure_input('hello')).to eq(clean('hello'))

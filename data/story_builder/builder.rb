@@ -3,7 +3,7 @@ class Builder
   attr_accessor :template, :dir
 
   def initialize
-    @template = Hash.new{ |h,k| h[k] = Hash.new(&h.default_proc) }
+    @template = Hash.new { |h, k| h[k] = Hash.new(&h.default_proc) }
     @dir = Dir['./data/story_builder/plain_text/*']
   end
 
