@@ -3,7 +3,7 @@ require 'colorize'
 module GameOutput
   LINE_BREAK = '**************************'.colorize(:cyan).freeze
 
-  def warn(warning)
+  def self.warn(warning)
     puts "\n"
     print warning.colorize(:red)
     puts "\n"

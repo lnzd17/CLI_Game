@@ -1,4 +1,8 @@
+require './helpers/game_output'
+
 module PromptHelper
+  include GameOutput
+
   def self.game_start
     puts 'Enter game? (y/n)'.colorize(:red)
     answer = gets.chomp.downcase.strip
@@ -17,7 +21,7 @@ module PromptHelper
     if Game.jewels >= Game.benchmark(current_level)
       require './prompts/challenge_two.rb'
     else
-      warn(Game.warning(current_level))
+      GameOutput.warn(Game.warning(current_level))
       Game.update_jewels(-Game.jewels)
       Game.player.profile
       load('./prompts/challenge_one.rb')
